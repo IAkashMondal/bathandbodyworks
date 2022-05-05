@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* <-------------------------sherenivas----------------------> */
+.navbox2{
+    height:50px;
+    width:auto;
+    background-color: gold;
+    display:flex;
+    justify-content:flex-start;
+    padding-left:12%;
+    gap:20px;
+    cursor: pointer;
+}.content{
+    display:none;
+  background-color: #f9f9f9;
+  width:auto;
+  height:auto;
+  padding-left: 10px ;
+  padding-right: 20px;
+  z-index: 1;
+  position:absolute;
+  line-height:5px;
+  margin-top:-1%;
+  color:black;
+}.shop-dropdown:hover  .content{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+  .shop-dropdown:focus  .content{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+  }.inside-content{
+    display:none;
+    background-color: #f9f9f9;
+    width:auto;
+    height:auto;
+    padding-left: 10px ;
+    padding-right: 20px;
+    z-index: 1;
+    position:absolute;
+    line-height:5px;
+    margin-top:-70%;
+    margin-left:40px;
+    color:black;
+  } .inside-page:hover .inside-content{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+}.inside-page:focus .inside-content{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+}
+
+</style>
+<body>
+    
+<!-- <---------------------------------------srinivas-------------------------- -->
+
+<div class="navbox2">
+    <div class="shop-dropdown">
+        <div><p>hidden div box</p></div>
+    <div class="content">
+        
+        <div class="inside-page">
+            <p>page 1</p>
+            <div class="inside-content">
+                <p onclick="Gotoshopepage()">inside1</p>
+                <p onclick="Gotoshopepage()">inside2</p>
+                <p onclick="Gotoshopepage()">inside3</p>
+                <p onclick="Gotoshopepage()">inside4</p>
+            </div>
+        </div>
+        <p>page2</p>
+        <p>page 3</p>
+        <p>page4</p>
+    </div>
+    </div>
+    
+  </div>
+
+  <!--branh name: srinivas -->
+
+</body>
+</html>
+
+<script>
+    function Gotoshopepage(){
+    window.location.href="payment.html"
+}
+</script>
