@@ -7,8 +7,7 @@ function discount(){
 
    if((coupon == "Masai30" )||(coupon == "masai30" )){
 
-       
-       
+         
 
 
        var discop = Number(Math.round((totaORDER_TOTALdis*30)/100))
@@ -466,8 +465,8 @@ products.map(function(ele){
 
 
 //  Display Calculation---------------------------------------------------------------------------------->
- var cartcoutup= document.querySelector("#Bagcount").innerText = `${length}`
- var totaldis = document.querySelector("#MERCHANDISE_SUBTOTAL").innerText = ` ${total}`;
+ var cartcoutup= document.querySelector("#Bagcount").innerText = `$ ${length}`
+ var totaldis = document.querySelector("#MERCHANDISE_SUBTOTAL").innerText = `$ ${total}`;
  var ESTIMATEDdis = document.querySelector("#ESTIMATED").innerText = ` ${ESTIMATED}`;
  var SALES_TAXdis = document.querySelector("#SALES_TAX").innerText = ` ${SALES_TAX}`;
  var totaORDER_TOTALdis = document.querySelector("#ORDER_TOTAL").innerText = ` ${ORDER_TOTAL}`;
