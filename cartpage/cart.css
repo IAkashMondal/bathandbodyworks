@@ -132,6 +132,13 @@ body{
         width: 30%;
        border-right: 5px solid #e5e5e5;
       margin-top: 2%;
+    }.adjust{
+        margin-top: 50px;
+    }#alter{
+        margin: auto;
+        width: 70%;
+    }#blackco{
+
     }
 
 
@@ -328,6 +335,7 @@ tr > th {
     width: 100%;
 }.paycheck{
     display: flex;
+    padding: 10px 10px 30px 10px;
 }#margin1{
     margin: auto;
     width: 57%;
@@ -367,6 +375,8 @@ tr > th {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
+} .boldtext{
+    font-weight: bold;
 }
 
 
