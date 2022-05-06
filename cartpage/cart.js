@@ -464,10 +464,10 @@ products.map(function(ele){
 
  function addToWishlist(ele){
            
-    var products= JSON.parse(localStorage.getItem("wish")) || []; //cart
+    var wishData= JSON.parse(localStorage.getItem("wish")) || []; //cart
     console.log(ele)
-    cartData.push(ele)
-    localStorage.setItem("wish",JSON.stringify(cartData))
+    wishData.push(ele)
+    localStorage.setItem("wish",JSON.stringify(wishData))
     window.location.reload()
           
               

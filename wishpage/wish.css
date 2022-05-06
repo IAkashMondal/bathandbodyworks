@@ -41,6 +41,27 @@ td {
 }
 
 tr > th {
-  background-color: #f1f1f1;
   color: black;
+}
+
+
+.suggestion_img{
+  width: 30%;
+  height: 50%;
+} .suggestion_box{
+  width: 100%;
+  height: auto;
+  padding: 10%;
+  overflow-x: hidden;
+  margin: auto;
+}.suggestion_box > .suggestion_img{
+  margin: auto;
+  display: block;
+  width: 100%; 
+  height: 100%;
+  margin-bottom: 10%;
+}#wishvisi{
+  border: 1px solid red;
+}#conitem{
+  display: grid;
 }
