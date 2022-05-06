@@ -1,12 +1,10 @@
 // // <---------------------------------------------------coupon-------------------------------------------->
 
 
-const getDataLocation =()=>{
-    fetch("http://localhost:4000/Products")
-    .then(res => res.json())
-    .then(res=> console.log(res))
-    .catch(e=>console.log(e));
-}
+// const getDataLocation =()=>{
+//     fetch("http://localhost:4000/Products").then(res => res.json()).then(res=> console.log(res))
+//     .catch(e=>console.log(e));
+// }
 
 
 // function getDataLocation() {
@@ -37,9 +35,9 @@ const getDataLocation =()=>{
 
 //         // collect 
 //          const data = await res.json() ;
-//         //  return data;
+//         //  return data.products ;
 //         // append(data.items);
-//         console.log(data)
+//         console.log(data.products)
 
 
 
@@ -50,7 +48,8 @@ const getDataLocation =()=>{
 
 // } ;
 
-
+fetch("http://localhost:4000/Products")
+.then(res => console.log(res))
 
 
  
