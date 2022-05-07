@@ -6,10 +6,10 @@
 
 // // <--------------------------------------------------- NAVRBAR  IMPORT STRAT HERE -------------------------------------------->
 
-import {container} from "../components/navbar.js";
+// import {container} from "../components/navbar.js";
 
-let box = document.querySelector("#srinivas-container");
-box.innerHTML = container();
+// let box = document.querySelector("#srinivas-container");
+// box.innerHTML = container();
 
 
 // // <--------------------------------------------------- NAVBAR IMPORT END HERE ------------------------------------------------>
@@ -101,17 +101,23 @@ function discount(){
 
 
 
+// const checkoutbag = document.querySelectorAll("checkoutbag");
 
+// checkoutbag.onclick('click', () => {
+//     window.location="Aroma.html"
+// })
 
-
-
-
-
-
-function gotoPayment(){
-   window.location.href="payment.html"
+function hello(){
+    window.location.href ="payment.html"
 }
-function Updatebag(){
+
+
+
+
+
+
+
+function Update(){
    window.location.reload()
 }
 
@@ -154,7 +160,17 @@ let products= [
        titel:"Eucalyptus Spearmint",
        description: "Moisturizing Body Wash",
        offer:"Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-   }
+   },
+   {
+    id: 5,
+    image: "",
+    price1:"$16.50",
+    price2:16.50 ,
+    titel:"Pineapple Lime Eucalyptus",
+    description: "Body Wash and Foam Bath",
+    offer:"Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
+}
+
 
 ]
 var cartData = JSON.parse(localStorage.getItem("cart"))||[];
@@ -294,7 +310,7 @@ products.map(function(ele){
    var img = document.createElement("img");
     
  
-   img.setAttribute("class","suggestion_img")
+   img.setAttribute("id","suggestion_img")
    img.src = elem.image;
    img.style.marginRight="10%"
 
@@ -455,9 +471,7 @@ function QUICKLOOK(ele){
 
 }
 
-function Updatebag(){
-    window.location.reload();
-}
+   
 
        var count = 0;
 

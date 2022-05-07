@@ -121,17 +121,13 @@ body{
         margin: auto;
         width: 60%;
     }#Twopart{
-        margin: auto;
-        width: 60%;
-    }#seodiv{
-        display: block;
-        margin: auto;
-        justify-content: end;
-    }#firstdiv{
-        margin:50PX;
-        width: 30%;
-       border-right: 5px solid #e5e5e5;
-      margin-top: 2%;
+      display: flex;
+      margin: auto;
+      width: 40%;
+      justify-content: space-around;
+      line-height: 25px;
+      padding: 10px;
+      
     }.adjust{
         margin-top: 50px;
     }#alter{
@@ -139,6 +135,38 @@ body{
         width: 70%;
     }#blackco{
 
+    }#changes{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: space-between;
+   
+    }#ChangeStore{
+        border-bottom: 1px solid black;
+        padding: 0%;
+        margin: 0%;
+    }#StoreDetails{
+        padding: 0%;
+        margin: 0%;
+        border: none;
+    }#mk-9{
+
+        border-left: 5px solid #f2f2f2;
+    }#mk-8{
+        border: 1px solid #f2f2f2;
+        width: 70%;
+        margin: auto;
+    }.firstdiv{
+        color: #005699;
+        display: block;
+        align-items: center;
+        margin: auto;
+    }#fthpart{
+        margin: auto;
+    }.firstdiv> .fa-location-dot ,.fa-truck{
+        color: #e944a4;
+    }#paypal:hover , #paypal:focus{
+        background-color: rgb(228, 246, 252);
     }
 
 
@@ -234,6 +262,8 @@ tr > th {
 /* ------------ttr_box */
 #tr_box{
     border-bottom: 1px solid rgb(8, 7, 7);
+    margin: auto;
+
 }
 /* --------------------------quantity-------------------> */
 #qtydiv{
@@ -264,11 +294,13 @@ tr > th {
     border: none;
     background: none;
     border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }#conitem{
     display: flex;
-}.suggestion_img{
+}#suggestion_img{
+  
     width: 30%;
-    height: 50%;
+    height: 10%;
 }
 /* <-----------------------------------------------------------------promotion---------------------------> */
 
@@ -377,6 +409,15 @@ tr > th {
     justify-content: space-around;
 } .boldtext{
     font-weight: bold;
+}.bottomz{
+    border: 0;
+    background-color: black;
+    border: none;
+    color: #ddd;
+    text-align: center;
+    padding: 4px;
+  
+    margin-top: 0;
 }
 
 
