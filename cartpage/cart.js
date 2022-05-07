@@ -64,8 +64,7 @@ function discount(){
        var discop = Number(Math.round((total*30)/100))
        console.log(discop,"discount coupon")
      let ORDER_TO=  Math.ceil(ORDER_TOTAL - discop)
-    //    var afterdis = Number(totaORDER_TOTAL-discop);
-    //    console.log(afterdis,"afer discount price:")
+
     var less =   document.querySelector("#Discount").innerText="-$"+ discop;
     var totaldis = document.querySelector("#MERCHANDISE_SUBTOTAL").innerText = "$"+  total;
     var ESTIMATEDdis = document.querySelector("#ESTIMATED").innerText ="$"+  ESTIMATED;
@@ -112,9 +111,9 @@ function discount(){
 function gotoPayment(){
    window.location.href="payment.html"
 }
-// function Updatebag(){
-//    window.location.reload()
-// }
+function Updatebag(){
+   window.location.reload()
+}
 
 
 
@@ -155,43 +154,9 @@ let products= [
        titel:"Eucalyptus Spearmint",
        description: "Moisturizing Body Wash",
        offer:"Mix & Match: Buy 3, Get 3 Free or Buy 2, Get 1 Free",
-   },
-   // {
-   //     id:5 ,
-   //     image: "",
-   //     price1:"$17.50",
-   //     price2:17.50 ,
-   //     titel:"Lavender Mint Tea",
-   //     description: "Ultimate Hydration Body Cream",
-   // },
-   // {
-   //     id:6 ,
-   //     image: "",
-   //     price1:"$",
-   //     price2: ,
-   //     titel:"",
-   //     description: "",
-   // },
-   // {
-   //     id:7 ,
-   //     image: "",
-   //     price1:"$14.50",
-   //     price2:14.50 ,
-   //     titel:"Eucalyptus Spearmint",
-   //     description: "Essential Oil Mist",
-   // },
-   
-   // {
-   //     id: 8,
-   //     image: "",
-   //     price1:"$",
-   //     price2: ,
-   //     titel:"",
-   //     description: "",
-   // },
+   }
+
 ]
-
-
 var cartData = JSON.parse(localStorage.getItem("cart"))||[];
 var wishData= JSON.parse(localStorage.getItem("wish")) || [];  
 var display= JSON.parse(localStorage.getItem("display")) || []; 
@@ -547,7 +512,7 @@ function Updatebag(){
 
 
 
-// console.log("less",less)
+
 
 
 
