@@ -1,0 +1,67 @@
+.NoUnderLine{
+    text-decoration: none;
+}#Secondary-Navi-Main  {
+    display: flex;
+}
+#Secondary-Navi-Main >#Secondary-Navigation{
+    margin: auto;
+    line-height: 300%;
+    display: grid
+  
+}#Logo{
+    width: 50%;
+}#primary-secondary{
+    display: grid;
+}
+
+
+
+
+table,
+td,
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 57%;
+  margin: auto;
+  margin-top: 50px;
+}th{
+    border: none;
+
+}td{
+    border: none;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  color: black;
+}
+
+
+.suggestion_img{
+  width: 30%;
+  height: 50%;
+} .suggestion_box{
+  width: 100%;
+  height: auto;
+  padding: 10%;
+  overflow-x: hidden;
+  margin: auto;
+}.suggestion_box > .suggestion_img{
+  margin: auto;
+  display: block;
+  width: 100%; 
+  height: 100%;
+  margin-bottom: 10%;
+}#wishvisi{
+  border: 1px solid red;
+}#conitem{
+  display: grid;
+}
