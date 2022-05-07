@@ -1,17 +1,24 @@
 .NoUnderLine{
     text-decoration: none;
 }#Secondary-Navi-Main  {
-    display: flex;
+    display: grid;
+    margin: auto;
+    line-height: 20%;
+    margin-left: 24%;
+    margin-top: -2%;
 }
 #Secondary-Navi-Main >#Secondary-Navigation{
     margin: auto;
-    line-height: 300%;
-    display: grid
-  
-}#Logo{
-    width: 50%;
-}#primary-secondary{
+    line-height: 20%;
     display: grid;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight: 100;
+  font-size: small;
+}#Logo{
+    width: 100%;
+}#primary-secondary > .Love-List{
+  font-family: Trade Gothic W01 Light,Arial,sans-serif;
+  font-weight: 600;
 }
 
 
@@ -64,4 +71,28 @@ tr > th {
   border: 1px solid red;
 }#conitem{
   display: grid;
+}
+
+
+#adjust9{
+margin: auto;
+width: 70%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}#adjust9 > .bodywidth{
+  font-family: Trade Gothic W01 Light,Arial,sans-serif;
+  display: flex;
+  margin: auto;
+text-align: center;
+gap:10px;
+font-weight: 100;
+}a{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}.subheader{
+  font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+  font-weight: 500;
 }

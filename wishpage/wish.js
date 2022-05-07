@@ -15,11 +15,10 @@ console.log(wishData) ;
 
 
   //   js function------------------------------------------------------------------------------------------->
-  count =1 ;
-  counqt=1;
 
 
-  wishData.map(function (elem, index) {
+
+  cartData.map(function (elem, index) {
 
     var box = document.createElement("tr");
     box.setAttribute("class","suggestion_box")
@@ -106,7 +105,7 @@ console.log(wishData) ;
   function addTocart(ele){
             var cartData = JSON.parse(localStorage.getItem("cart")) || []; //cart
             console.log(ele)
-            dealsweek.push(ele)
+            cartData.push(ele)
             localStorage.setItem("cart",JSON.stringify(cartData))
             window.location.reload()
 
