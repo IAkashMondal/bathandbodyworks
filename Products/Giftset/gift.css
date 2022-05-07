@@ -44,6 +44,9 @@
     background-color: white;
     color:black;
 }
+#gift_button:focus{
+    background-color: blue;
+}
 .spaan{
     display:none
 }
