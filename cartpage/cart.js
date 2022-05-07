@@ -6,8 +6,11 @@
 
 // // <--------------------------------------------------- NAVRBAR  IMPORT STRAT HERE -------------------------------------------->
 
-// import { navbar } from "../components/navbar.js";
-// document.getElementById("navbar").innerHTML=navbar()
+import {container} from "../components/navbar.js";
+
+let box = document.querySelector("#srinivas-container");
+box.innerHTML = container();
+
 
 // // <--------------------------------------------------- NAVBAR IMPORT END HERE ------------------------------------------------>
 
@@ -109,9 +112,9 @@ function discount(){
 function gotoPayment(){
    window.location.href="payment.html"
 }
-function Updatebag(){
-   window.location.reload()
-}
+// function Updatebag(){
+//    window.location.reload()
+// }
 
 
 
