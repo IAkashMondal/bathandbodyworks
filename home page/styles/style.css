@@ -1,0 +1,312 @@
+#srinivas-container {
+  /* border: 3px solid rgb(255, 0, 0); */
+  width: 100%;
+  height: 12.5em;
+  margin: auto;
+}
+#offer-section {
+  /* border: 1px solid black; */
+  height: 2.9em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#offer-section>div:nth-child(1),
+#offer-section>div:nth-child(3){
+  height: 2.9em;
+  width: 25%;
+  background: repeat url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651657560640/css/images/gingham-pattern.svg?yocs=o_s_");
+  /* https://cdn3.vectorstock.com/i/1000x1000/08/12/blue-tablecloth-pattern-design-vector-15790812.jpg */
+  background-size: 28px 29px;
+  background-position: calc(50% - 7px) calc(50% - 21px);
+}
+#offer-section>div:nth-child(2){
+  height: 2.9em;
+  width: 50%;
+
+}
+/* #offer-section > div {
+  border: 1px solid;
+} */
+#store_pickup-section {
+  height: 2.2em;
+  /* border: 2px solid orange; */
+  background-color: #f2f2f2;
+}
+#navbar {
+  /* border: 2px solid blue; */
+  height: 7em;
+  width: 100%;
+}
+#options-section {
+    /* display: flex; */
+  /* border: 1px solid green; */
+  height: 4em;
+  
+}
+#hovering-section {
+  /* border: 1px solid purple; */
+  height: 2.9em;
+}
+#pickup-bystore {
+  display: flex;
+  width: 14.8em;
+  /* border: 1px solid; */
+  height: 36px;
+  float: right;
+  margin-right: 1.9em;
+  justify-content: center;
+  align-items: center;
+}
+.pickup {
+  font-size: 20px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1197f7;
+}
+.message {
+  /* font-family: "Maven Pro", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 9px;
+  margin-right: 9px;
+  color: #005699;
+}
+.setstore {
+  font-size: 15px;
+  color: #333333;
+}
+#website-title {
+  border: 1px solid white;
+  margin: auto;
+  height: 4em;
+}
+
+#website-title{
+    background: no-repeat url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwf1f0e62b/images/svg-icons/Logos-main.svg?yocs=o_s_");
+    background-position: center;
+    background-size: 390px;
+
+}
+#random{
+    /* border: 2px solid; */
+    width: 420px;
+    height: 3.8em;
+    float: right;
+    margin-right: 3.5em;
+    display: flex;
+    gap: 10px;
+    position: relative;
+
+}
+
+.fg--search {
+  background: white;
+  position: relative;
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fg--search input {
+  width: 100%;
+  padding: 10px 0px 7px 0px;
+  display: block;
+}
+
+.fg--search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 18px 8px;
+  z-index: 2;
+  -webkit-text-fill-color: #062f4d;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: #238ad3;
+}
+
+#userImage-div{
+  /* border: 1px solid; */
+  width: auto;
+  height: auto;
+
+}
+#user-image{
+  width: 3em;
+  height: 3em;
+  /* margin-top: -10px; */
+}
+
+.usercart{
+  font-size: 2.25em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #062f4d;
+  margin-top: 5px;
+
+}
+.offer-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#span1 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #00569c;
+  font-weight: 500;
+}
+#span2{
+  font-size: 21px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #005699;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+#span3{
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #004b84;
+}
+/* margin: 0 auto;
+width: 100%;
+text-align: center;
+display: table;
+clear: both;
+max-width: 1160px;
+list-style: none;
+border: none;
+} */
+#hovering-section{
+  /* border: 1px solid; */
+  height: 3em;
+  width: 75%;
+  margin: auto;
+}
+.hoveringUL{
+  margin: auto;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  gap: 50px;
+}
+.hoveringUL p{
+  font-size: 15px;
+  font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+  font-weight: 100;
+  color: #585858;
+}
+
+#new-and-now{
+  width: 160%;
+  /* height: 50vh; */
+  /* display: block; */
+  position: fixed;
+  /* border: 5px solid black; */
+  display: none;
+  z-index: 8;
+  gap: 38px;
+  padding: 50px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  row-gap: 30px;
+  transition: 2s ease-in-out;
+}
+.hovering-ptag1:hover,
+.hovering-ptag2:hover,
+.hovering-ptag3:hover,
+.hovering-ptag4:hover,
+.hovering-ptag5:hover,
+.hovering-ptag6:hover{
+  border-bottom:  3px solid rgb(31, 31, 170);
+}
+
+#body-care{
+  width: 160%;
+  /* height: 50vh; */
+  /* display: block; */
+  position: fixed;
+  /* border: 5px solid black; */
+  display: none;
+  z-index: 8;
+  gap: 38px;
+  padding: 50px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  row-gap: 30px;
+  transition: 2s ease-in-out;
+}
+#sanitizers{
+  width: 160%;
+  /* height: 50vh; */
+  /* display: block; */
+  position: fixed;
+  /* border: 5px solid black; */
+  display: none;
+  z-index: 8;
+  gap: 38px;
+  padding: 50px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  row-gap: 30px;
+  transition: 2s ease-in-out;
+}
+#fragrance{
+  width: 160%;
+  /* height: 50vh; */
+  /* display: block; */
+  position: fixed;
+  /* border: 5px solid black; */
+  display: none;
+  z-index: 8;
+  gap: 38px;
+  padding: 50px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  row-gap: 30px;
+  transition: 0.3s ease-in-out;
+}
+#gifts{
+  width: 160%;
+  /* height: 50vh; */
+  /* display: block; */
+  position: fixed;
+  /* border: 5px solid black; */
+  display: none;
+  z-index: 8;
+  gap: 38px;
+  padding: 50px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  row-gap: 30px;
+  transition: 2s ease-in-out;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  
+}
+.right{
+  font-size: 14px;
+  font-family:  TradeGothicLTW05-BoldNo\.2,Arial,sans-serif;
+  font-weight: 300;
+  color: #666666;
+
+}
+/* url("https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/en_US/v1651657560640/css/images/gingham-pattern.svg?yocs=o_s_") */

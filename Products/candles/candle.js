@@ -37,6 +37,7 @@ let p15 = new products("Pink Pineapple Sunrise","Single Wick Candle",15.50 ,"Mix
 
 ShopCandle.push(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15);
 
+
 ShopCandle.forEach(({img,fname,type,price,description}) =>{
 
     let container = document.querySelector("#container_candle");
@@ -74,16 +75,17 @@ ShopCandle.forEach(({img,fname,type,price,description}) =>{
     descriptions.style.fontSize = "11px"
 
 
-    let carebutton = () =>{
-    
-    }
+  
 
     let btn = document.createElement("button")
     btn.setAttribute("id","candle_button")
     btn.innerText = "ADD TO BAG"
     btn.style.padding = "10px 80px"
 
-    btn.addEventListener("click",carebutton)
+    btn.addEventListener("click",function(){
+        AddToBag({img,fname,type,price,description})
+
+    })
 
 
     let span1 = document.createElement("span")
@@ -96,5 +98,29 @@ ShopCandle.forEach(({img,fname,type,price,description}) =>{
 
      dib.append(img_div,name,types,prices,descriptions,btn,span1)
     container.append(dib)
+
+    img_div.addEventListener("click",function(){
+        DisplayPage({img,fname,type,price,description})
+      
+    })
    
 });
+
+let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+let Display = JSON.parse(localStorage.getItem("display")) || [];
+
+
+let AddToBag = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    CartData.push({img,fname,type,price,description});
+    localStorage.setItem("bag",JSON.stringify(CartData));
+    window.location.reload();
+}
+
+
+let DisplayPage = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    Display.push({img,fname,type,price,description});
+    localStorage.setItem("display",JSON.stringify(Display));
+    window.location.href = "display.html"
+}

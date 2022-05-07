@@ -43,12 +43,18 @@ Aromatherapy.push(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15)
 
 
 
+
+// let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+// let Display = JSON.parse(localStorage.getItem("display")) || [];
+
 Aromatherapy.forEach(({img,fname,type,price,description}) =>{
 
     let container = document.querySelector("#container_Aroma");
 
     let dib = document.createElement("div")
     dib.setAttribute("class","Aroma_div")
+
+    
 
     let img_div = document.createElement("div")
 
@@ -78,18 +84,19 @@ Aromatherapy.forEach(({img,fname,type,price,description}) =>{
     descriptions.innerText = description;
     descriptions.style.color = "red"
     descriptions.style.fontSize = "11px"
-
-
-    let carebutton = () =>{
     
-    }
+    
 
     let btn = document.createElement("button")
     btn.setAttribute("id","Aroma_button")
     btn.innerText = "ADD TO BAG"
     btn.style.padding = "10px 80px"
 
-    btn.addEventListener("click",carebutton)  //carebutton same in every page
+    btn.addEventListener("click",function(){
+        AddToBag({img,fname,type,price,description})
+
+    }) 
+     //carebutton same in every page
 
 
     let span1 = document.createElement("span")
@@ -103,4 +110,29 @@ Aromatherapy.forEach(({img,fname,type,price,description}) =>{
      dib.append(img_div,name,types,prices,descriptions,btn,span1)
     container.append(dib)
    
+
+    img_div.addEventListener("click",function(){
+        DisplayPage({img,fname,type,price,description})
+       
+    })
 });
+
+
+let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+let Display = JSON.parse(localStorage.getItem("display")) || [];
+
+
+let AddToBag = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    CartData.push({img,fname,type,price,description});
+    localStorage.setItem("bag",JSON.stringify(CartData));
+    window.location.reload();
+}
+
+
+let DisplayPage = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    Display.push({img,fname,type,price,description});
+    localStorage.setItem("display",JSON.stringify(Display));
+    window.location.href = "display.html"
+}

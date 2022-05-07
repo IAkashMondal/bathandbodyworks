@@ -37,6 +37,9 @@ let f15 = new products("Sun-Washed Citrus","Wallflowers Fragrance Refill",7.50 ,
 
 willflower.push(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15);
 
+
+
+
 willflower.forEach(({img,fname,type,price,description}) =>{
 
     let container = document.querySelector("#container_flower");
@@ -74,16 +77,17 @@ willflower.forEach(({img,fname,type,price,description}) =>{
     descriptions.style.fontSize = "11px"
 
 
-    let carebutton = () =>{
     
-    }
 
     let btn = document.createElement("button")
     btn.setAttribute("id","flower_button")
     btn.innerText = "ADD TO BAG"
     btn.style.padding = "10px 80px"
 
-    btn.addEventListener("click",carebutton)
+    btn.addEventListener("click",function(){
+        AddToBag({img,fname,type,price,description})
+
+    })
 
 
     let span1 = document.createElement("span")
@@ -96,5 +100,32 @@ willflower.forEach(({img,fname,type,price,description}) =>{
 
      dib.append(img_div,name,types,prices,descriptions,btn,span1)
     container.append(dib)
+
+
+    img_div.addEventListener("click",function(){
+        DisplayPage({img,fname,type,price,description})
+       
+    })
    
 });
+
+
+let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+let Display = JSON.parse(localStorage.getItem("display")) || [];
+
+
+let AddToBag = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    CartData.push({img,fname,type,price,description});
+    localStorage.setItem("bag",JSON.stringify(CartData));
+    window.location.reload();
+}
+
+
+let DisplayPage = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    Display.push({img,fname,type,price,description});
+    localStorage.setItem("display",JSON.stringify(Display));
+    window.location.href = "display.html"
+}
+

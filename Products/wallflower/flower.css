@@ -42,6 +42,9 @@
     background-color: white;
     color:black;
 }
+#flower_button:focus{
+    background-color: blue;
+}
 .spaan{
     display:none
 }

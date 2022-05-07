@@ -43,6 +43,7 @@ GiftShop.push(g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15)
 
 
 
+
 GiftShop.forEach(({img,fname,type,price,description}) =>{
 
     let container = document.querySelector("#container_gift");
@@ -82,16 +83,18 @@ GiftShop.forEach(({img,fname,type,price,description}) =>{
     dis.style.textDecoration = "line-through"
 
 
-    let carebutton = () =>{
-    
-    }
+   
 
     let btn = document.createElement("button")
     btn.setAttribute("id","gift_button")
     btn.innerText = "ADD TO BAG"
     btn.style.padding = "10px 80px"
 
-    btn.addEventListener("click",carebutton)  //carebutton same in every page
+    btn.addEventListener("click",function(){
+        AddToBag({img,fname,type,price,description})
+
+    })
+    //carebutton same in every page
 
 
     let span1 = document.createElement("span")
@@ -104,5 +107,32 @@ GiftShop.forEach(({img,fname,type,price,description}) =>{
 
      dib.append(img_div,name,types,prices,dis,btn,span1)
     container.append(dib)
+
+
+    img_div.addEventListener("click",function(){
+        DisplayPage({img,fname,type,price,description})
+      
+    })
    
 });
+
+
+let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+let Display = JSON.parse(localStorage.getItem("display")) || [];
+
+
+let AddToBag = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    CartData.push({img,fname,type,price,description});
+    localStorage.setItem("bag",JSON.stringify(CartData));
+    window.location.reload();
+}
+
+
+let DisplayPage = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    Display.push({img,fname,type,price,description});
+    localStorage.setItem("display",JSON.stringify(Display));
+    window.location.href = "display.html"
+}
+
