@@ -49,7 +49,7 @@ let newandnowFun = () => {
     // newandnow.style.position = "fixed";
     newandnow.style.backgroundColor = "white";
     newandnow.style.zindex = 8;
-    newandnow.style.transition = "0.4s ease-in-out";
+    newandnow.style.transition = "10s ease-in-out";
     // newandnow.style.textDecoration = "underline blue";
     
    }
@@ -67,7 +67,7 @@ let  bodycareFun = () => {
     // newandnow.style.position = "fixed";
     bodycare.style.backgroundColor = "white";
     bodycare.style.zindex = 8;
-    bodycare.style.transition = "0.4s ease-in-out"
+    bodycare.style.transition = "10s ease-in-out"
     
    }
 
@@ -84,7 +84,7 @@ let  handandSoapsFun = () => {
     // newandnow.style.position = "fixed";
     handandsoap.style.backgroundColor = "white";
     handandsoap.style.zindex = 8;
-    handandsoap.style.transition = "0.4s ease-in-out"
+    handandsoap.style.transition = "10s ease-in-out"
     
    }
 

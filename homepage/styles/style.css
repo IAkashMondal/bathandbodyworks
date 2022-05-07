@@ -221,7 +221,7 @@ border: none;
   margin-left: -30px;
   box-sizing: border-box;
   row-gap: 30px;
-  transition: 2s ease-in-out;
+  /* transition: 2s ease-in-out; */
 }
 .hovering-ptag1:hover,
 .hovering-ptag2:hover,
@@ -230,6 +230,10 @@ border: none;
 .hovering-ptag5:hover,
 .hovering-ptag6:hover{
   border-bottom:  3px solid rgb(31, 31, 170);
+}
+
+#new-and-now:hover{
+  transition: 1s ease-in-out;
 }
 
 #body-care{
@@ -245,7 +249,7 @@ border: none;
   margin-left: -30px;
   box-sizing: border-box;
   row-gap: 30px;
-  transition: 2s ease-in-out;
+  /* transition: 10s ease-in-out; */
 }
 #sanitizers{
   width: 160%;
@@ -260,7 +264,7 @@ border: none;
   margin-left: -30px;
   box-sizing: border-box;
   row-gap: 30px;
-  transition: 2s ease-in-out;
+  /* transition: 10s ease-in-out; */
 }
 #fragrance{
   width: 160%;
