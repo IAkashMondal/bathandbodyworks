@@ -42,6 +42,10 @@
     background-color: white;
     color:black;
 }
+#candle_button:focus{
+    background-color: blue;
+}
+
 .spaan{
     display:none
 }

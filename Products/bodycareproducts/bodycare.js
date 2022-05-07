@@ -46,6 +46,8 @@ BodyCareProducts.push(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15)
 //console.log(BodyCareProducts)
 
 
+
+
 BodyCareProducts.forEach(({img,fname,type,price,description}) =>{
 
     let container = document.querySelector("#container_care");
@@ -83,16 +85,16 @@ BodyCareProducts.forEach(({img,fname,type,price,description}) =>{
     descriptions.style.fontSize = "11px"
 
 
-    let carebutton = () =>{
-    
-    }
 
     let btn = document.createElement("button")
     btn.setAttribute("id","care_button")
     btn.innerText = "ADD TO BAG"
     btn.style.padding = "10px 80px"
 
-    btn.addEventListener("click",carebutton)
+    btn.addEventListener("click",function(){
+        AddToBag({img,fname,type,price,description})
+
+    })
 
 
     let span1 = document.createElement("span")
@@ -105,5 +107,31 @@ BodyCareProducts.forEach(({img,fname,type,price,description}) =>{
 
      dib.append(img_div,name,types,prices,descriptions,btn,span1)
     container.append(dib)
+
+    img_div.addEventListener("click",function(){
+        DisplayPage({img,fname,type,price,description})
+      
+    })
    
 });
+
+
+let CartData = JSON.parse(localStorage.getItem("bag")) || [];
+let Display = JSON.parse(localStorage.getItem("display")) || [];
+
+
+let AddToBag = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    CartData.push({img,fname,type,price,description});
+    localStorage.setItem("bag",JSON.stringify(CartData));
+    window.location.reload();
+}
+
+
+let DisplayPage = ({img,fname,type,price,description}) =>{
+    //console.log({img,fname,type,price,description});
+    Display.push({img,fname,type,price,description});
+    localStorage.setItem("display",JSON.stringify(Display));
+    window.location.href = "display.html"
+}
+
